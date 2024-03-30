@@ -1,0 +1,44 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em 17em;
+    width: 100%;
+    font-family: Poppins;
+    transition: box-shadow 0.3s ease-in-out 0s;
+    
+}
+
+.sectionsNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.contacts{
+     display: flex;
+        align-items: center;
+}
+
+.sectionsNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.contactA{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(170, 14, 14);
+    padding: 5px 12px;
+    color: #FFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    
+}

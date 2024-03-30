@@ -1,0 +1,60 @@
+.introductionMe{
+    display: flex;
+    flex-direction: row;
+    padding: 1.2em 17em;
+    height: 80vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.imgContent img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.s-midias{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.s-midias h1{
+    font-size: 5em;
+    
+}
+
+.s-midias span{
+    color: rgb(170, 14, 14);;
+}
+
+.s-midias p{
+    font-size: 1.9em;
+}
+
+
+.bTecs img{
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.tecImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.tecnologies{
+    background-color: black;
+    border-radius: 10px;
+    padding: 0px 30px;
+}
+
