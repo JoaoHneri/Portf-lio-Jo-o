@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     padding: 1.2em 17em;
-    height: 80vh;
-    width: 100vw;
+    height: 93vh;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .s-midias span{
-    color: rgb(170, 14, 14);;
+    color: rgb(170, 14, 14);
 }
 
 .s-midias p{
@@ -55,6 +55,53 @@
 .tecnologies{
     background-color: black;
     border-radius: 10px;
-    padding: 0px 30px;
+    padding: 0px 30;
+    
+}
+
+.aboutMe{
+    height: 92vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #171717;
+}
+
+.aboutMe p{
+    font-size: 1.4em;
+    color: rgb(170, 14, 14);
+    padding: 1em 0em .2em 0em;
+}
+.aboutMe h1{
+    font-size: 2em;
+    color: white;
+}
+
+.meInfos{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6em;
+    padding: 0em 18em;
+}
+
+
+@keyframes waves {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Ajuste a altura das ondas conforme necessário */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.meInfos .imageCoding img{
+    width: 450px;
+    height: 450px;
+    animation: waves 2s ease-in-out infinite;
 }
 
