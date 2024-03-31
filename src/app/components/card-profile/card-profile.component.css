@@ -1,6 +1,6 @@
 .card {
-    width: 24em;
-    height: 30.5em;
+    width: 26em;
+    height: 38em;
     background: rgb(170, 14, 14);
     transition: 1s ease-in-out;
     clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
@@ -8,6 +8,7 @@
     border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column;
+
   }
   
   .card span {
@@ -28,8 +29,8 @@
   }
   
   .card .img {
-    width: 4.8em;
-    height: 4.8em;
+    width: 5em;
+    height: 5em;
     background: white;
     border-radius: 15px;
     margin: auto;

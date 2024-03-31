@@ -10,9 +10,8 @@
 }
 
 .imgContent img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+    width: 500px;
+    height: 500px;
 }
 
 .s-midias{
@@ -60,7 +59,7 @@
 }
 
 .aboutMe{
-    height: 92vh;
+    height: 100vh;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -105,3 +104,11 @@
     animation: waves 2s ease-in-out infinite;
 }
 
+
+.myProjs{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}

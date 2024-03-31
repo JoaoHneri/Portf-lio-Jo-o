@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardProfileComponent } from './components/card-profile/card-profile.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardProjectComponent } from './components/card-project/card-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardProfileComponent
+    CardProfileComponent,
+    CardProjectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
