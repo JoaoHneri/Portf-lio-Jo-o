@@ -112,3 +112,18 @@
     text-align: center;
     background-color: #ffffff;
 }
+
+.myProjs .titleSection{
+    padding-top: 2em;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5em;
+    padding: 0em 18em;
+    flex-wrap: wrap;
+}

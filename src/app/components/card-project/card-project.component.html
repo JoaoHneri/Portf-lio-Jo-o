@@ -1,3 +1,18 @@
-<div class="card">
-    Click me
+<a href="{{linkProject}}" target="_blank">
+  <div class="card">
+    <div class="card-details">
+      <h1>{{nameProject}}</h1>
+      <p>
+        {{descriptionProject}}
+      </p>
+  
+      
+    </div>
+    <div class="tecsInfos">
+  
+      <span *ngFor="let item of tec">{{item}}</span>
+    </div>
+    
   </div>
+</a>
+
