@@ -95,9 +95,8 @@ a{
     text-decoration: none;
     color: #171717;
     font-weight: 700;
-    background-color: #aa0e0e;
+    border: 1px solid #171717;
     padding: .3em;
-    border: 1px solid transparent;
     border-radius: 7px;
     margin-bottom: 15px;
   }
