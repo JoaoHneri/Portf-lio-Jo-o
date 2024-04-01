@@ -59,7 +59,7 @@
 }
 
 .aboutMe{
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -69,7 +69,7 @@
 .aboutMe p{
     font-size: 1.4em;
     color: rgb(170, 14, 14);
-    padding: 1em 0em .2em 0em;
+    padding: 4em 0em .2em 0em;
 }
 .aboutMe h1{
     font-size: 2em;
@@ -81,7 +81,7 @@
     flex: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 6em;
+    margin-top: 2em;
     padding: 0em 18em;
 }
 
@@ -104,9 +104,54 @@
     animation: waves 2s ease-in-out infinite;
 }
 
+.formacao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.9em;
+}
+
+.formaInfos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.infosF{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.infosF{
+    color: #ffffff;
+}
+.infosF span{
+    color: #ffffff;
+}
+.formaInfos svg{
+    background-color: rgb(170, 14, 14);
+    padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.formaInfos .textCont{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.textCont p{
+    font-size: 1.2em;
+    margin-bottom: .1em;
+    font-weight: bold;
+}
+
 
 .myProjs{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -132,65 +177,5 @@
     flex-wrap: wrap;
 }
 
-.contatos{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 7em;
-}
 
 
-.contatInfos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contatInfos svg{
-    background-color: rgb(170, 14, 14);
-    padding: 12px;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    margin-right: 8px;
-}
-
-.contatInfos .textCont{
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    justify-content: center;
-}
-
-.textCont p{
-    font-size: 1.2em;
-    margin-bottom: .1em;
-    font-weight: bold;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    padding: 2em 5em;
-    background: rgb(220, 220, 220);
-}
-
-.footer .navegacao{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer .navegacao a{
-    text-decoration: none;
-    color: #171717;
-    margin-bottom: 2px;
-}
-
-.footer .linksU{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-}
