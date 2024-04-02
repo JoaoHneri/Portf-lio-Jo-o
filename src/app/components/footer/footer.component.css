@@ -80,4 +80,32 @@ font-size: .8em;
   margin: 0em .2em;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2em 1em;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+  .footer .navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0em;
+  }
+
+  .footer .linksU {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+  }
+}
 

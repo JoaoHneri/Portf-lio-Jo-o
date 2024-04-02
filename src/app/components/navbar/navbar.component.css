@@ -1,32 +1,49 @@
-nav{
+/* Mantendo as regras existentes */
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1.2em 17em;
     width: 100%;
     font-family: Poppins;
     transition: box-shadow 0.3s ease-in-out 0s;
-    
 }
 
-.sectionsNav{
+.sectionsNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 20%;
 }
 
-.contacts{
-     display: flex;
-        align-items: center;
+.contacts {
+    display: flex;
+    align-items: center;
 }
 
 .sectionsNav a {
     text-decoration: none;
     color: black;
     font-size: 1.1em;
+    position: relative; 
 }
 
-.contactA{
+.sectionsNav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(170, 14, 14);
+    transition: width 0.3s ease;
+}
+
+.sectionsNav a:hover::after {
+    width: 100%;
+}
+
+.contactA {
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background: rgb(170, 14, 14);
@@ -40,5 +57,24 @@ nav{
     margin-left: 24px;
     font-size: 1.1em;
     font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 1.2em 1em; 
+    }
     
+    .sectionsNav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .contacts {
+        display: none;
+    }
 }

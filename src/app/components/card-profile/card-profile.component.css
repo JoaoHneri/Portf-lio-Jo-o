@@ -70,3 +70,34 @@
     cursor: pointer;
   }
 
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 20em;
+      height: 34em;
+      padding: .8em 0em 10em 0em;
+    }
+
+    .card .info {
+      font-weight: 400;
+      color: white;
+      display: block;
+      text-align: start;
+      font-size: .8em;
+      margin: 1em;
+    }
+
+    .card button {
+      padding: 0.5em 1em;
+      display: block;
+      margin: auto;
+      border-radius: 25px;
+      border: none;
+      font-weight: bold;
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      transition: .4s ease-in-out;
+    }
+  }
+
+
+  

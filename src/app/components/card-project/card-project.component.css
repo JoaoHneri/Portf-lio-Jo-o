@@ -100,3 +100,57 @@ a{
     border-radius: 7px;
     margin-bottom: 15px;
   }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      position: relative;
+      width: 360px;
+      height: 230px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      box-shadow: 0 0 0 5px #ffffff80;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      margin-bottom: 1.5em;
+    }
+
+    .card__title {
+      font-size: 1.5em; /* Reduzindo ainda mais o tamanho do título para telas menores */
+    }
+  
+    .card__description {
+      font-size: 0.8em; /* Reduzindo ainda mais o tamanho da descrição para telas menores */
+    }
+  
+    .card-details h1 {
+      font-size: 1.2em; /* Reduzindo ainda mais o tamanho do título do detalhe para telas menores */
+    }
+  
+    .tecsInfos span {
+      font-size: 0.8em; /* Reduzindo o tamanho da fonte dos elementos span para telas menores */
+    }
+  }
+
+  @media screen and (max-width: 468px) {
+    .card {
+      position: relative;
+      width: 330px;
+      height: 230px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      box-shadow: 0 0 0 5px #ffffff80;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      margin-bottom: 1.5em;
+    }
+  }
