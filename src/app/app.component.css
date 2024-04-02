@@ -64,7 +64,7 @@
 .aboutMe .meApresentacao p {
   font-size: 1.4em;
   color: rgb(170, 14, 14);
-  padding: 2em 0em 0.2em 0em;
+  padding: 3em 0em 0.2em 0em;
 }
 .aboutMe h1 {
   font-size: 2em;
@@ -116,7 +116,7 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .infosF {
   color: #ffffff;
@@ -167,7 +167,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin-top: 5em;
-  padding: 0em 18em;
+  padding: 0em 12em;
   flex-wrap: wrap;
 }
 
