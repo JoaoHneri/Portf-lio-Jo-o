@@ -323,7 +323,7 @@
 
 }
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 1200px) {
   .aboutMe {
     height: 150vh;
     width: 100%;
@@ -337,11 +337,11 @@
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
 
 
   .aboutMe {
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     align-items: center;
     text-align: center;
