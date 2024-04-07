@@ -323,7 +323,7 @@
 
 }
 
-@media only screen and (width: 768px) {
+@media only screen and (max-width: 678px) {
   .aboutMe {
     height: 150vh;
     width: 100%;
