@@ -171,7 +171,6 @@
   flex-wrap: wrap;
 }
 
-
 @media screen and (max-width: 768px){
   .introductionMe {
     display: flex;
@@ -323,7 +322,7 @@
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
   .aboutMe {
     height: 150vh;
     width: 100%;
@@ -337,21 +336,16 @@
   }
 }
 
-@media screen and (max-width: 450px){
-
-
+@media only screen and (max-width: 770px) {
   .aboutMe {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     align-items: center;
     text-align: center;
     background-color: #171717;
   }
-  .textCont p {
-  font-size: 0.44em;
-  margin-bottom: 0.1em;
-  font-weight: bold;
-}
 
-  
+  .s-midias h1 {
+    font-size: 4em;
+  }
 }
