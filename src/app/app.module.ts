@@ -8,6 +8,7 @@ import { CardProfileComponent } from './components/card-profile/card-profile.com
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CardExperienceComponent } from './components/card-experience/card-experience.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     CardProfileComponent,
     CardProjectComponent,
-    FooterComponent
+    FooterComponent,
+    CardExperienceComponent
   ],
   imports: [
     BrowserModule,

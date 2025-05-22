@@ -1,0 +1,70 @@
+.experience-card {
+  display: flex;
+  gap: 16px;           /* Antes 20px, menor espaçamento */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 700px;    /* Antes 800px, largura um pouco menor */
+  margin: 0 auto;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;       /* Antes 20px, menos padding */
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.header-experience {
+  display: flex;
+  margin-bottom: 8px;  /* Antes 10px */
+  width: 100%;
+  text-align: left;
+  color: aliceblue;
+}
+
+.experience-content{
+    color: aliceblue;
+}
+
+.enterprise {
+  margin-left: 8px;    /* Antes 10px */
+}
+
+.company-logo {
+  width: 50px;         /* Antes 60px */
+  height: 50px;        /* Antes 60px */
+  object-fit: contain;
+}
+
+.experience-content h3 {
+  margin: 0;
+  font-size: 1.1em;    /* Antes 1.3em */
+}
+
+.company {
+  font-weight: bold;
+  color: #ccc;
+  margin-top: 3px;     /* Antes 4px */
+}
+
+.date-location {
+  font-size: 0.85em;   /* Antes 0.9em */
+  color: #aaa;
+  margin-top: 3px;     /* Antes 4px */
+}
+
+.description {
+  margin-top: 8px;     /* Antes 10px */
+  line-height: 1.4;    /* Antes 1.5 */
+}
+
+/* Para mobile */
+@media (max-width: 600px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-logo {
+    margin-bottom: 8px; /* Antes 10px */
+  }
+}

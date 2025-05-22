@@ -9,6 +9,7 @@
   text-align: center;
 }
 
+
 .imgContent img {
   width: 500px;
   height: 500px;
@@ -54,17 +55,19 @@
 }
 
 .aboutMe {
-  height: 110vh;
+  height: 100%;
   width: 100%;
   align-items: center;
   text-align: center;
   background-color: #171717;
+  padding-bottom: 25px;
 }
 
 .aboutMe .meApresentacao p {
   font-size: 1.4em;
   color: rgb(170, 14, 14);
   padding: 3em 0em 0.2em 0em;
+  margin-bottom: 15px;
 }
 .aboutMe h1 {
   font-size: 2em;
@@ -103,6 +106,7 @@
 .formacao {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .formaInfos {
@@ -112,7 +116,7 @@
   flex-wrap: wrap;
 }
 
-.infosF {
+.infosF, .experiences {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -155,30 +159,30 @@
 
 .myProjs .titleSection {
   padding-top: 2em;
+  margin-bottom: 20px;
 }
 
 .titleSection h1 {
   font-size: 2em;
 }
 
-.cards {
+.cards,.experiences {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 5em;
   padding: 0em 12em;
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .introductionMe {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
   }
-  
+
   .imgContent img {
     width: 300px;
     height: 300px;
@@ -191,21 +195,20 @@
     text-align: center;
     padding-bottom: 10em;
   }
-  
+
   .s-midias h1 {
     font-size: 3em;
   }
-  
+
   .s-midias p {
     font-size: 1em;
   }
-  
+
   .bTecs img {
     margin: 8px;
     width: 20px;
     height: 20px;
   }
-
 
   .aboutMe {
     height: 150vh;
@@ -214,7 +217,7 @@
     text-align: center;
     background-color: #171717;
   }
-  
+
   .aboutMe .meApresentacao p {
     font-size: 1.4em;
     color: rgb(170, 14, 14);
@@ -225,43 +228,44 @@
     color: white;
     margin-bottom: 15px;
   }
-  
+
   .meInfos {
     padding: 0;
     margin: 0;
   }
-  
+
   .cardprofile {
     display: flex;
     justify-content: center;
     align-items: center; /* Adicionando esta linha para centralizar verticalmente */
   }
-  
-  .imageCoding{
+
+  .imageCoding {
     display: none;
   }
 
   .meInfos .imageCoding img {
     display: none;
   }
-  
 
   .formacao {
     display: flex;
     flex-direction: column;
   }
-  
+
   .formaInfos {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  
+
   .infosF {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 2em;
+        display: flex;
+        width: 100%;
+        margin-top: 2em;
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
   }
   .infosF {
     color: #ffffff;
@@ -269,31 +273,17 @@
   .infosF span {
     color: #ffffff;
   }
-  .formaInfos svg {
-    background-color: rgb(170, 14, 14);
-    padding: 1px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    margin-right: 2px;
-  }
-  
+
+
   .formaInfos .textCont {
     display: flex;
     flex-direction: column;
     align-items: self-start;
     justify-content: center;
   }
-  
-  .textCont p {
-    font-size: 0.54em;
-    margin-bottom: 0.2em;
-  }
-  
-  .textCont span {
-    font-size: .5em;
-  }
+
+
+
   .myProjs {
     height: 100%;
     width: 100%;
@@ -301,30 +291,31 @@
     text-align: center;
     background-color: #ffffff;
   }
-  
-  .myProjs .titleSection {
-    padding-top: 2em;
-  }
-  
+
+
+
   .titleSection h1 {
     font-size: 2em;
   }
-  
-  .cards {
+
+  .cards, .experiences {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5em;
+    margin-top: 1em;
     padding: 0;
     flex-wrap: wrap;
+    gap: 2em;
   }
-
+  .experiences{
+    padding: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
   .aboutMe {
-    height: 150vh;
+    height: 100%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -336,16 +327,5 @@
   }
 }
 
-@media only screen and (max-width: 770px) {
-  .aboutMe {
-    height: 90vh;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    background-color: #171717;
-  }
 
-  .s-midias h1 {
-    font-size: 4em;
-  }
-}
+
