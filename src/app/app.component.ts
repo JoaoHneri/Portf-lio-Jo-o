@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
         aplicações. Utilizei PHP e JavaScript para construir soluções escaláveis, colaborando
         estreitamente com as equipes de design e backend para garantir a integração eficaz e a
         resolução de desafios complexos.`,
-      tec: ['PHP', 'JavaScript', 'WebSockets', 'API', 'Layouts Responsivos']
+      tec: ['Ionic', 'Angular', 'Firebase', 'TypeScript', 'Node.js', 'Express']
     },
     // outras experiências aqui
   ];
