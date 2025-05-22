@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
       role: 'Desenvolvedor Full-Stack',
       nameCompany: 'Rekomendo',
       logo: 'assets/images/rekomendo-logo.webp', // exemplo, pode deixar vazio se não tiver logo
-      timeExperience: 'Abril de 2024 - Mar 2025',
+      timeExperience: 'Agosto de 2024 - Mar 2025',
       descriptionExperience: `Rekomendo, um aplicativo de divulgação e prestação de serviços que circula
         principalmente em minha cidade, Feira de Santana, rekomendo.com.br, onde fui um dos
         dois desenvolvedores, atuando tanto em back e front-end, trazendo um site agradável e
