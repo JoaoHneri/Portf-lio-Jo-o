@@ -1,22 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class NavbarComponent {
+  menuOpen = false;
+  scrolled = false;
+  @HostListener('window:scroll') onScroll(): void {
+    this.scrolled = window.scrollY > 20;
   }
-
-  redirectToClass( className: string) {
-    const element = document.querySelector(`.${className}`);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  closeMenu(): void {
+    this.menuOpen = false;
   }
-
 }

@@ -17,14 +17,10 @@ import { CardExperienceComponent } from './components/card-experience/card-exper
     CardProfileComponent,
     CardProjectComponent,
     FooterComponent,
-    CardExperienceComponent
+    CardExperienceComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

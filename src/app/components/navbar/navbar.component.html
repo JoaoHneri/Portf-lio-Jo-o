@@ -1,15 +1,43 @@
-<nav>
-    <div class="introduction">
-        <h1>João Henrique</h1>
+<header [class.scrolled]="scrolled">
+  <nav
+    class="container"
+    aria-label="Navegação principal"
+  >
+    <a
+      class="brand"
+      href="#inicio"
+      (click)="closeMenu()"
+      >JH<span>.</span></a
+    ><button
+      class="menu"
+      type="button"
+      (click)="menuOpen = !menuOpen"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Abrir menu"
+    >
+      <i></i><i></i>
+    </button>
+    <div
+      class="links"
+      [class.open]="menuOpen"
+    >
+      <a
+        href="#sobre"
+        (click)="closeMenu()"
+        >Sobre</a
+      ><a
+        href="#experiencia"
+        (click)="closeMenu()"
+        >Experiência</a
+      ><a
+        href="#projetos"
+        (click)="closeMenu()"
+        >Projetos</a
+      ><a
+        class="contact"
+        href="mailto:joaohenrique.dev00@gmail.com"
+        >Vamos conversar <span aria-hidden="true">↗</span></a
+      >
     </div>
-
-    <div class="sectionsNav">
-        <a href="#">Inicio</a>
-        <a href="#" (click)="redirectToClass('aboutMe')">Projetos</a>
-        <a href="#" (click)="redirectToClass('myProjs')">Formação</a>
-    </div>
-    
-    <div class="contacts">
-        <a href="contatos" class="contactA">Entre em Contato</a>
-    </div>
-</nav>
+  </nav>
+</header>

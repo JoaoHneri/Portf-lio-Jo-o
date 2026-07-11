@@ -1,18 +1,22 @@
-<a href="{{linkProject}}" target="_blank">
-  <div class="card">
-    <div class="card-details">
-      <h1>{{nameProject}}</h1>
-      <p>
-        {{descriptionProject}}
-      </p>
-  
-      
-    </div>
-    <div class="tecsInfos">
-  
-      <span *ngFor="let item of tec">{{item}}</span>
-    </div>
-    
+<a
+  class="project"
+  [href]="linkProject"
+  target="_blank"
+  rel="noopener noreferrer"
+  [attr.aria-label]="'Abrir projeto ' + nameProject + ' em nova aba'"
+  ><div class="project__top">
+    <span>{{ index < 10 ? '0' + index : index }}</span
+    ><span
+      class="arrow"
+      aria-hidden="true"
+      >↗</span
+    >
   </div>
-</a>
-
+  <div>
+    <h3>{{ nameProject }}</h3>
+    <p>{{ descriptionProject }}</p>
+    <ul aria-label="Tecnologias">
+      <li *ngFor="let item of tec">{{ item }}</li>
+    </ul>
+  </div></a
+>

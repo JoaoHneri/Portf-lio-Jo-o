@@ -1,70 +1,66 @@
-.experience-card {
-  display: flex;
-  gap: 16px;           /* Antes 20px, menor espaçamento */
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 700px;    /* Antes 800px, largura um pouco menor */
-  margin: 0 auto;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 16px;       /* Antes 20px, menos padding */
-  background-color: #2a2a2a;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  text-align: left;
+.experience {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 55px 1fr 1.5fr;
+  padding: 36px 0;
+  transition: 0.3s;
 }
-
-.header-experience {
-  display: flex;
-  margin-bottom: 8px;  /* Antes 10px */
-  width: 100%;
-  text-align: left;
-  color: aliceblue;
+.experience:hover {
+  border-color: var(--accent);
 }
-
-.experience-content{
-    color: aliceblue;
+.index {
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 700;
 }
-
-.enterprise {
-  margin-left: 8px;    /* Antes 10px */
-}
-
-.company-logo {
-  width: 50px;         /* Antes 60px */
-  height: 50px;        /* Antes 60px */
-  object-fit: contain;
-}
-
-.experience-content h3 {
-  margin: 0;
-  font-size: 1.1em;    /* Antes 1.3em */
-}
-
 .company {
-  font-weight: bold;
-  color: #ccc;
-  margin-top: 3px;     /* Antes 4px */
+  align-items: center;
+  display: flex;
+  gap: 14px;
 }
-
-.date-location {
-  font-size: 0.85em;   /* Antes 0.9em */
-  color: #aaa;
-  margin-top: 3px;     /* Antes 4px */
+.company img {
+  background: white;
+  border-radius: 10px;
+  height: 48px;
+  object-fit: contain;
+  padding: 5px;
+  width: 48px;
 }
-
-.description {
-  margin-top: 8px;     /* Antes 10px */
-  line-height: 1.4;    /* Antes 1.5 */
+.company h3 {
+  color: white;
+  font: 700 1.1rem 'Manrope';
+  margin-bottom: 5px;
 }
-
-/* Para mobile */
-@media (max-width: 600px) {
-  .experience-card {
-    flex-direction: column;
-    align-items: flex-start;
+.company p,
+time {
+  color: #85847f;
+  font-size: 0.82rem;
+}
+.details > p {
+  color: #aaa9a4;
+  line-height: 1.65;
+  margin: 16px 0 20px;
+}
+.details ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+}
+.details li {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  color: #c8c7c2;
+  font-size: 0.7rem;
+  padding: 5px 9px;
+}
+@media (max-width: 720px) {
+  .experience {
+    grid-template-columns: 36px 1fr;
   }
-
-  .company-logo {
-    margin-bottom: 8px; /* Antes 10px */
+  .details {
+    grid-column: 2;
   }
 }

@@ -1,7 +1,127 @@
-/* You can add global styles to this file, and also import other style files */
-*, body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Adicionei 'sans-serif' como fallback caso a fonte Poppins não esteja disponível */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root {
+  --accent: #ff4d3d;
+  --ink: #11110f;
+  --paper: #f3f0e9;
+  --muted: #696863;
+  --line: rgba(17, 17, 15, 0.14);
+  --container: 1180px;
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+}
+a,
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  width: min(calc(100% - 40px), var(--container));
+  margin-inline: auto;
+}
+.section {
+  padding: clamp(88px, 10vw, 144px) 0;
+}
+.eyebrow {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.eyebrow span {
+  background: var(--accent);
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+}
+.eyebrow--light {
+  color: #aaa9a4;
+}
+.section-heading {
+  align-items: end;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1.5fr 1fr;
+  margin-bottom: 64px;
+}
+.section-heading h2 {
+  color: #f6f3ec;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+  margin-top: 18px;
+}
+.section-heading h2 em {
+  color: var(--accent);
+  font-style: normal;
+}
+.section-heading > p {
+  color: #a8a7a2;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 500px;
+}
+.section-heading--light h2 {
+  color: var(--ink);
+}
+.section-heading--light > p {
+  color: var(--muted);
+}
+::selection {
+  background: var(--accent);
+  color: white;
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+@media (max-width: 720px) {
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .section-heading {
+    grid-template-columns: 1fr;
+    margin-bottom: 42px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

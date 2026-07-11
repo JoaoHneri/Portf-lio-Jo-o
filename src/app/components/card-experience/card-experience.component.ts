@@ -1,20 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-card-experience',
   templateUrl: './card-experience.component.html',
-  styleUrls: ['./card-experience.component.css']
+  styleUrls: ['./card-experience.component.css'],
 })
-export class CardExperienceComponent implements OnInit {
-
-  @Input() nameCompany!: string;
-  @Input() tec!: string[];                // tecnologias usadas
-  @Input() descriptionExperience!: string;
-  @Input() timeExperience!: string;
-  @Input() role!: string;                 // cargo/posição
-  @Input() logo!: string;                 // URL do logo
-
-  constructor() {}
-
-  ngOnInit(): void {}
+export class CardExperienceComponent {
+  @Input() index = 1;
+  @Input() nameCompany = '';
+  @Input() tec: string[] = [];
+  @Input() descriptionExperience = '';
+  @Input() timeExperience = '';
+  @Input() role = '';
+  @Input() logo = '';
 }

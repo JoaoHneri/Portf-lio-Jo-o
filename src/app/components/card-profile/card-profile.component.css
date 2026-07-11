@@ -1,110 +1,72 @@
-.card {
-    width: 26em;
-    height: 38em;
-    background: rgb(170, 14, 14);
-    transition: 1s ease-in-out;
-    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    display: flex;
-    flex-direction: column;
-
+.profile {
+  align-items: stretch;
+  display: grid;
+  gap: clamp(32px, 7vw, 90px);
+  grid-template-columns: 0.7fr 1.3fr;
+}
+.profile__image {
+  background: #292925;
+  border-radius: 18px;
+  min-height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+.profile__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.profile__content {
+  align-self: center;
+}
+.kicker {
+  color: var(--accent) !important;
+  font-size: 0.76rem !important;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.profile h3 {
+  color: white;
+  font: 700 clamp(1.8rem, 3vw, 3rem) / 1.15 'Manrope';
+  letter-spacing: -0.04em;
+  margin: 20px 0 28px;
+}
+.profile h3 em {
+  color: var(--accent);
+  font-style: normal;
+}
+.profile p {
+  color: #aaa9a4;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.profile__links a {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.profile__links a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+@media (max-width: 720px) {
+  .profile {
+    grid-template-columns: 1fr;
   }
-  
-  .card span {
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 1em;
+  .profile__image {
+    min-height: 390px;
   }
-  
-  .card .info {
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: start;
-    font-size: 1em;
-    margin: 1em;
-  }
-  
-  .card .img {
-    width: 5em;
-    height: 5em;
-    background: white;
-    border-radius: 15px;
-    margin: auto;
-  }
-  
-  .card .share {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  }
-  
-  .card a {
-    color: white;
-    transition: .4s ease-in-out;
-  }
-  
-  .card a:hover {
-    color: rgb(0, 0, 0);
-  }
-  
-  .card button {
-    padding: 0.8em 1.7em;
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    transition: .4s ease-in-out;
-  }
-  
-  .card button:hover {
-    background: rgb(0, 0, 0);
-    color: white;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 768px) {
-    .card {
-      width: 20em;
-      height: 34em;
-      padding: .8em 0em 10em 0em;
-    }
-
-    .card .info {
-      font-weight: 400;
-      color: white;
-      display: block;
-      text-align: start;
-      font-size: .8em;
-      margin: 1em;
-    }
-
-    .card button {
-      padding: 0.5em 1em;
-      display: block;
-      margin: auto;
-      border-radius: 25px;
-      border: none;
-      font-weight: bold;
-      background: #ffffff;
-      color: rgb(0, 0, 0);
-      transition: .4s ease-in-out;
-    }
-  }
-
-  .curriculo-donwload{
-    text-decoration: none;
-    color: white; 
-    margin: 10px; 
-
-  }
-
-
-  
+}
