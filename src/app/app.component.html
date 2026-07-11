@@ -14,27 +14,26 @@
         class="hero__content"
         data-aos="fade-up"
       >
-        <p class="eyebrow"><span></span>Disponível para novos desafios</p>
-        <h1 id="hero-title">Construo produtos digitais que <em>funcionam de verdade.</em></h1>
-        <p class="hero__lead">
-          Olá, sou João Henrique — desenvolvedor Full-Stack focado em transformar problemas
-          complexos em experiências simples, rápidas e escaláveis.
-        </p>
+        <p class="eyebrow"><span></span>{{ lang.t.available }}</p>
+        <h1 id="hero-title">
+          {{ lang.t.heroTitle }} <em>{{ lang.t.heroEmphasis }}</em>
+        </h1>
+        <p class="hero__lead">{{ lang.t.intro }}</p>
         <div class="hero__actions">
           <a
             class="button button--primary"
             href="#projetos"
-            >Explorar projetos <span aria-hidden="true">↗</span></a
+            >{{ lang.t.explore }} <span aria-hidden="true">↗</span></a
           ><a
             class="button button--ghost"
-            href="assets/curriculo.pdf"
+            [href]="lang.resumeUrl"
             download
-            >Baixar currículo <span aria-hidden="true">↓</span></a
+            >{{ lang.t.download }} <span aria-hidden="true">↓</span></a
           >
         </div>
         <ul
           class="tech-list"
-          aria-label="Principais tecnologias"
+          [attr.aria-label]="lang.t.technologies"
         >
           <li *ngFor="let technology of technologies">{{ technology }}</li>
         </ul>
@@ -47,11 +46,11 @@
           <span aria-hidden="true">&lt;dev /&gt;</span
           ><img
             src="assets/images/personagem.png"
-            alt="Ilustração de João Henrique trabalhando com tecnologia"
+            [alt]="lang.t.imageAlt"
           />
         </div>
         <div class="floating-card floating-card--top">
-          <strong>3+</strong><span>anos criando</span>
+          <strong>3+</strong><span>{{ lang.t.years }}</span>
         </div>
         <div class="floating-card floating-card--bottom">
           <i></i><span>Feira de Santana, BA</span>
@@ -70,8 +69,10 @@
         data-aos="fade-up"
       >
         <div>
-          <p class="eyebrow eyebrow--light"><span></span>Sobre mim</p>
-          <h2 id="about-title">Código com contexto.<br /><em>Produto com propósito.</em></h2>
+          <p class="eyebrow eyebrow--light"><span></span>{{ lang.t.aboutLabel }}</p>
+          <h2 id="about-title">
+            {{ lang.t.aboutTitle }}<br /><em>{{ lang.t.aboutEmphasis }}</em>
+          </h2>
         </div>
         <p>
           Combino visão de produto, cuidado visual e engenharia para criar soluções que sejam boas
@@ -83,27 +84,13 @@
         class="education"
         data-aos="fade-up"
       >
-        <p class="eyebrow eyebrow--light"><span></span>Formação contínua</p>
+        <p class="eyebrow eyebrow--light"><span></span>{{ lang.t.education }}</p>
         <div class="education__grid">
-          <article>
-            <span>01</span>
+          <article *ngFor="let course of courses[lang.language]; let i = index">
+            <span>{{ i + 1 < 10 ? '0' + (i + 1) : i + 1 }}</span>
             <div>
-              <h3>Sistemas de Informação</h3>
-              <p>Instituto Federal da Bahia</p>
-            </div>
-          </article>
-          <article>
-            <span>02</span>
-            <div>
-              <h3>Desenvolvimento de Sistemas</h3>
-              <p>SENAI Bahia</p>
-            </div>
-          </article>
-          <article>
-            <span>03</span>
-            <div>
-              <h3>Inglês Intermediário II</h3>
-              <p>Universidade Estadual de Feira de Santana</p>
+              <h3>{{ course[0] }}</h3>
+              <p>{{ course[1] }}</p>
             </div>
           </article>
         </div>
@@ -121,10 +108,12 @@
         data-aos="fade-up"
       >
         <div>
-          <p class="eyebrow eyebrow--light"><span></span>Trajetória</p>
-          <h2 id="experience-title">Experiência que<br /><em>gera impacto.</em></h2>
+          <p class="eyebrow eyebrow--light"><span></span>{{ lang.t.journey }}</p>
+          <h2 id="experience-title">
+            {{ lang.t.journeyTitle }}<br /><em>{{ lang.t.journeyEmphasis }}</em>
+          </h2>
         </div>
-        <p>Atuação de ponta a ponta, do desenho da solução ao deploy, em produtos reais.</p>
+        <p>{{ lang.t.journeySummary }}</p>
       </div>
       <div class="experience-list">
         <app-card-experience
@@ -152,11 +141,13 @@
         data-aos="fade-up"
       >
         <div>
-          <p class="eyebrow"><span></span>Projetos selecionados</p>
-          <h2 id="projects-title">Ideias que saíram<br /><em>do papel.</em></h2>
+          <p class="eyebrow"><span></span>{{ lang.t.selected }}</p>
+          <h2 id="projects-title">
+            {{ lang.t.ideas }}<br /><em>{{ lang.t.ideasEmphasis }}</em>
+          </h2>
         </div>
         <p>
-          Uma seleção de aplicações em que explorei produto, interface, arquitetura e integrações.
+          {{ lang.t.projectsSummary }}
         </p>
       </div>
       <div class="project-grid">

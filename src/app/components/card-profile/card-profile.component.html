@@ -2,23 +2,17 @@
   <div class="profile__image">
     <img
       src="assets/images/João.png"
-      alt="Foto de João Henrique"
+      [alt]="lang.t.profileAlt"
       loading="lazy"
     />
   </div>
   <div class="profile__content">
-    <p class="kicker">Desenvolvedor • Estudante • Criador</p>
-    <h3>Entre interfaces e APIs, meu foco é sempre a <em>experiência completa.</em></h3>
-    <p>
-      Sou desenvolvedor Full-Stack e estudante de Sistemas de Informação no IFBA, com formação
-      técnica em Desenvolvimento de Sistemas pelo SENAI-BA. Tenho experiência prática com
-      JavaScript, TypeScript, Angular, Java Spring, Node.js, PHP e Symfony.
-    </p>
-    <p>
-      Gosto de entender o problema antes de escolher a tecnologia. Atualmente aprofundo
-      conhecimentos em Java, Spring Boot, Docker, cloud e inteligência artificial para construir
-      sistemas cada vez mais robustos.
-    </p>
+    <p class="kicker">{{ lang.t.profileKicker }}</p>
+    <h3>
+      {{ lang.t.profileTitle }} <em>{{ lang.t.profileEmphasis }}</em>
+    </h3>
+    <p>{{ lang.t.profileP1 }}</p>
+    <p>{{ lang.t.profileP2 }}</p>
     <div class="profile__links">
       <a
         href="https://github.com/JoaoHneri"
@@ -31,9 +25,9 @@
         rel="noopener noreferrer"
         >LinkedIn ↗</a
       ><a
-        href="assets/curriculo.pdf"
+        [href]="lang.resumeUrl"
         download
-        >Currículo ↓</a
+        >{{ lang.t.resume }} ↓</a
       >
     </div>
   </div>

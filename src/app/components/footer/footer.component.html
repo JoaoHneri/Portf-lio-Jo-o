@@ -1,9 +1,11 @@
 <footer id="contato">
   <div class="container">
     <div class="footer__cta">
-      <p class="eyebrow eyebrow--light"><span></span>Tem um projeto em mente?</p>
-      <h2>Vamos criar algo<br /><em>memorável.</em></h2>
-      <a href="mailto:joaohenrique.dev00@gmail.com">Enviar um e-mail ↗</a>
+      <p class="eyebrow eyebrow--light"><span></span>{{ lang.t.footerLabel }}</p>
+      <h2>
+        {{ lang.t.footerTitle }}<br /><em>{{ lang.t.footerEmphasis }}</em>
+      </h2>
+      <a href="mailto:joaohenrique.dev00@gmail.com">{{ lang.t.sendEmail }} ↗</a>
     </div>
     <div class="footer__bottom">
       <p>© {{ currentYear }} João Henrique</p>
@@ -18,7 +20,7 @@
           target="_blank"
           rel="noopener noreferrer"
           >LinkedIn</a
-        ><a href="#inicio">Voltar ao topo ↑</a>
+        ><a href="#inicio">{{ lang.t.back }} ↑</a>
       </nav>
     </div>
   </div>

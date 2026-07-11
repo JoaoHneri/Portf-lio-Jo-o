@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 @Component({
   selector: 'app-card-profile',
@@ -7,7 +8,7 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 })
 export class CardProfileComponent implements OnInit {
   faFileArchive = faFilePdf;
-  constructor() {}
+  constructor(public lang: LanguageService) {}
 
   ngOnInit(): void {}
 }

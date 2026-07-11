@@ -84,3 +84,33 @@ nav {
     text-align: center;
   }
 }
+
+.language-switcher {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: flex;
+  gap: 5px;
+  padding: 4px 9px;
+}
+.language-switcher button {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 2px;
+}
+.language-switcher button.active {
+  color: var(--accent);
+}
+.language-switcher span {
+  color: var(--line);
+}
+
+.nav-actions {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}

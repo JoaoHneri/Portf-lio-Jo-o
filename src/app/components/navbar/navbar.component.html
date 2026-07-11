@@ -8,15 +8,8 @@
       href="#inicio"
       (click)="closeMenu()"
       >JH<span>.</span></a
-    ><button
-      class="menu"
-      type="button"
-      (click)="menuOpen = !menuOpen"
-      [attr.aria-expanded]="menuOpen"
-      aria-label="Abrir menu"
     >
-      <i></i><i></i>
-    </button>
+
     <div
       class="links"
       [class.open]="menuOpen"
@@ -24,20 +17,59 @@
       <a
         href="#sobre"
         (click)="closeMenu()"
-        >Sobre</a
-      ><a
+        >{{ lang.t.about }}</a
+      >
+      <a
         href="#experiencia"
         (click)="closeMenu()"
-        >Experiência</a
-      ><a
+        >{{ lang.t.experience }}</a
+      >
+      <a
         href="#projetos"
         (click)="closeMenu()"
-        >Projetos</a
-      ><a
+        >{{ lang.t.projects }}</a
+      >
+      <a
         class="contact"
         href="mailto:joaohenrique.dev00@gmail.com"
-        >Vamos conversar <span aria-hidden="true">↗</span></a
       >
+        {{ lang.t.talk }} <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="nav-actions">
+      <div
+        class="language-switcher"
+        aria-label="Selecionar idioma"
+      >
+        <button
+          type="button"
+          [class.active]="lang.language === 'pt-BR'"
+          [attr.aria-pressed]="lang.language === 'pt-BR'"
+          (click)="lang.setLanguage('pt-BR')"
+        >
+          PT
+        </button>
+        <span aria-hidden="true">|</span>
+        <button
+          type="button"
+          [class.active]="lang.language === 'en'"
+          [attr.aria-pressed]="lang.language === 'en'"
+          (click)="lang.setLanguage('en')"
+        >
+          EN
+        </button>
+      </div>
+
+      <button
+        class="menu"
+        type="button"
+        (click)="menuOpen = !menuOpen"
+        [attr.aria-expanded]="menuOpen"
+        aria-label="Abrir menu"
+      >
+        <i></i><i></i>
+      </button>
     </div>
   </nav>
 </header>
