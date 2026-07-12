@@ -38,7 +38,7 @@ const experienceCopy = {
     [
       'Desenvolvedor Back-end',
       'Junho de 2025 — atualmente',
-      'Desenvolvimento e manutenção de APIs e microsserviços para pagamentos, e-mails e integrações externas. Atuação com processamento assíncrono, bancos relacionais, documentação de APIs e deploy em nuvem.',
+      'Desenvolvimento e manutenção de APIs e microsserviços para pagamentos, e-mails e integrações externas. Atuação com processamento assíncrono, bancos relacionais e documentação de APIs.',
     ],
     [
       'Desenvolvedor Full-Stack',
@@ -55,7 +55,7 @@ const experienceCopy = {
     [
       'Back-end Developer',
       'June 2025 — present',
-      'Development and maintenance of APIs and microservices for payments, emails and external integrations. Working with asynchronous processing, relational databases, API documentation and cloud deployment.',
+      'Development and maintenance of APIs and microservices for payments, emails and external integrations. Working with asynchronous processing, relational databases and API documentation.',
     ],
     [
       'Full-Stack Developer',
